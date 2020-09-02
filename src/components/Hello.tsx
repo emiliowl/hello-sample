@@ -5,6 +5,6 @@ export interface HelloProps {
     onClick: () => void;
   }
 
-export default function Hello({text, onClick}) {
-    return <div onClick={onClick}>{text}</div>;
+export default function Hello(props :HelloProps) {
+    return <div onClick={props.onClick}>{props.text}</div>;
 }
