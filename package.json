@@ -4,6 +4,7 @@
     "dist",
     "README.md"
   ],
+  "types": "./dist/types.d.ts",
   "repository": {
     "type": "git",
     "url": "URL_OF_YOUR_REPOSITORY"
