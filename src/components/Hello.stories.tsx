@@ -4,15 +4,17 @@ import { Story, Meta } from "@storybook/react/types-6-0";
 
 import Hello, { HelloProps } from "./Hello";
 
-export default {
+const meta = {
   title: "Example/Hello",
   component: Hello,
   argTypes: {
-    text: { control: "text" },
-  },
-} as Meta;
+    text: { control: "text" }
+  }
+};
 
-const Template: Story<HelloProps> = (args) => <Hello {...args} />;
+export default meta;
+
+const Template :Story<HelloProps> = (args) => <Hello {...args} />;
 
 export const HelloDft = Template.bind({});
 HelloDft.args = {
